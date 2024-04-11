@@ -219,8 +219,8 @@ public:
   virtual void        WriteKeys() {}
 
   static Bool_t       Cd(const char *path);
-  static void         DecodeNameCycle(const char *namecycle, char *name, Short_t &cycle, const size_t namesize = 0);
-  static void         EncodeNameCycle(char *buffer, const char *name, Short_t cycle);
+  // static void         DecodeNameCycle(const char *namecycle, char *name, Short_t &cycle, const size_t namesize = 0);
+  // static void         EncodeNameCycle(char *buffer, const char *name, Short_t cycle);
 };
 
 %nodefault;
@@ -367,7 +367,7 @@ public:
   static Int_t       IncreaseDirLevel();
   static void        IndentLevel();
   static Bool_t      Initialized();
-  static Bool_t      MemCheck();
+  // static Bool_t      MemCheck();
   static void        SetDirLevel(Int_t level = 0);
   static Int_t       ConvertVersionCode2Int(Int_t code);
   static Int_t       ConvertVersionInt2Code(Int_t v);
